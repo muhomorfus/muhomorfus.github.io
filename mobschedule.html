@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Расписание</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        * {
+            font-family: "Rubik";
+            font-size: calc((100vw - 480px) / (1280 - 480) * (56 - 24) + 16px);
+        }
+
+        .card {
+            margin-bottom: 2em;
+        }
+
+        .container-fluid {
+            padding: 2em;
+        }
+
+        .num {
+            font-weight: 600;
+        }
+
+        /*.list-group-item {
+            padding-top: 7px;
+            padding-bottom: 7px;
+        }*/
+
+        .disabld {
+            color: #c5c5c5;
+
+        }
+
+        .time {
+            color: #c5c5c5;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="card mx-auto">
+        <div class="card-header">
+            Понедельник
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><span class="num">1. </span>Биология <span class="time">9:00-9:30</span></li>
+            <li class="list-group-item"><span class="num">2. </span>Алгебра <span class="time">9:40-10:10</span></li>
+            <li class="list-group-item"><span class="num">3. </span>Алгебра <span class="time">10:20-10:50</span></li>
+            <li class="list-group-item disabld"><span class="num">4. </span>Перерыв <span
+                    class="time">11:00-11:30</span></li>
+            <li class="list-group-item disabld"><span class="num">5. </span>Алгебра <span
+                    class="time">11:40-12:10</span></li>
+            <li class="list-group-item"><span class="num">6. </span>Информатика <span class="time">12:20-12:50</span>
+            </li>
+            <li class="list-group-item disabld"><span class="num">7. </span>Англ <span class="time">13:00-13:30</span>
+            </li>
+            <li class="list-group-item disabld"><span class="num">8. </span>Технология <span
+                    class="time">13:40-14:10</span></li>
+        </ul>
+    </div>
+    <div class="card mx-auto">
+        <div class="card-header">
+            Вторник
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item disabld"><span class="num">1. </span>Информатика <span
+                    class="time">9:00-9:30</span></li>
+            <li class="list-group-item disabld"><span class="num">2. </span>Физика <span class="time">9:40-10:10</span>
+            </li>
+            <li class="list-group-item disabld"><span class="num">3. </span>Перерыв <span
+                    class="time">10:20-10:50</span></li>
+            <li class="list-group-item"><span class="num">4. </span>Физика <span class="time">11:00-11:30</span></li>
+            <li class="list-group-item"><span class="num">5. </span>История <span class="time">11:40-12:10</span></li>
+            <li class="list-group-item disabld"><span class="num">6. </span>Обществознание <span class="time">12:20-12:50</span>
+            </li>
+            <li class="list-group-item"><span class="num">7. </span>Литература <span class="time">13:00-13:30</span>
+            </li>
+            <li class="list-group-item"><span class="num">8. </span>Русский язык <span class="time">13:40-14:10</span>
+            </li>
+        </ul>
+    </div>
+    <div class="card mx-auto">
+        <div class="card-header">
+            Среда
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><span class="num">1. </span>Физика <span class="time">9:00-9:30</span></li>
+            <li class="list-group-item disabld"><span class="num">2. </span>Геометрия <span
+                    class="time">9:40-10:10</span></li>
+            <li class="list-group-item disabld"><span class="num">3. </span>Алгебра <span
+                    class="time">10:20-10:50</span></li>
+            <li class="list-group-item disabld"><span class="num">4. </span>Перерыв <span
+                    class="time">11:00-11:30</span></li>
+            <li class="list-group-item disabld"><span class="num">5. </span>Физика <span class="time">11:40-12:10</span>
+            </li>
+            <li class="list-group-item"><span class="num">6. </span>Английский язык <span
+                    class="time">12:20-12:50</span></li>
+            <li class="list-group-item"><span class="num">7. </span>Обществознание <span class="time">13:00-13:30</span>
+            </li>
+            <li class="list-group-item disabld"><span class="num">8. </span>Англ <span class="time">13:40-14:10</span>
+            </li>
+        </ul>
+    </div>
+    <div class="card mx-auto">
+        <div class="card-header">
+            Четверг
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><span class="num">1. </span>Литература <span class="time">9:00-9:30</span></li>
+            <li class="list-group-item disabld"><span class="num">2. </span>Литература <span
+                    class="time">9:40-10:10</span>
+            </li>
+            <li class="list-group-item"><span class="num">3. </span>Физика <span class="time">10:20-10:50</span></li>
+            <li class="list-group-item disabld"><span class="num">4. </span>История <span
+                    class="time">11:00-11:30</span>
+            </li>
+            <li class="list-group-item disabld"><span class="num">5. </span>Физкультура <span
+                    class="time">11:40-12:10</span></li>
+            <li class="list-group-item disabld"><span class="num">6. </span>Физкультура <span
+                    class="time">12:20-12:50</span></li>
+            <li class="list-group-item disabld"><span class="num">7. </span>Химия <span class="time">13:00-13:30</span>
+            </li>
+        </ul>
+    </div>
+    <div class="card mx-auto">
+        <div class="card-header">
+            Пятница
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item disabld"><span class="num">1. </span>Алгебра <span class="time">9:00-9:30</span>
+            </li>
+            <li class="list-group-item disabld"><span class="num">2. </span>Геометрия <span
+                    class="time">9:40-10:10</span>
+            </li>
+            <li class="list-group-item"><span class="num">3. </span>Информатика <span class="time">10:20-10:50</span>
+            </li>
+            <li class="list-group-item"><span class="num">4. </span>Геометрия <span class="time">11:00-11:30</span></li>
+            <li class="list-group-item disabld"><span class="num">5. </span>Перерыв <span
+                    class="time">11:40-12:10</span>
+            </li>
+            <li class="list-group-item disabld"><span class="num">6. </span>Физика <span class="time">12:20-12:50</span>
+            </li>
+            <li class="list-group-item"><span class="num">7. </span>ОБЖ <span class="time">13:00-13:30</span></li>
+            <li class="list-group-item disabld"><span class="num">8. </span>Физика <span class="time">13:40-14:10</span>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
