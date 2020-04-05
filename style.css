@@ -6,6 +6,11 @@
     text-rendering: unset;
 }
 
+.navbar-brand {
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
 .mf-nav {
     background-color: transparent;
     height: 5em;
