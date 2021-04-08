@@ -1,44 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>muhomorfus.space</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-            crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"
-            integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
-            crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet"> 
-    <link href="style.css" rel="stylesheet">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pomoika ads</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 36px;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            height: 100%;
+        }
+
+        .container {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            vertical-align: center;
+        }
+
+        a {
+            text-decoration: underline;
+            text-decoration-style: solid;
+            color: black;
+            margin: auto auto;
+        }
+
+        a:hover {
+            text-decoration-style: solid;
+            outline: none;
+        }
+    </style>
 </head>
 <body>
-<nav class="navbar navbar-dark mf-nav">
-    <div class="container">
-        <a class="navbar-brand oldfont" href="#">muhomorfus.space</a>
-    </div>
-</nav>
-<div class="container oldfont">
-    <br>
-    <!--            Hello<span class="hub">World</span>-->
-    <button class="mf-start-button">GoSH</button>
-    <button class="mf-start-button">BMSTU Bot</button>
-    <button class="mf-start-button">Атлант сервис</button>
-    <button class="mf-start-button">Stickers</button>
-    <button class="mf-start-button">routter</button>
-    <button class="mf-start-button">Server ninja</button>
-    <button class="mf-start-button">Text recognizer</button>
-    <button class="mf-start-button">1D Viner-Rozenblut model</button>
-    <button class="mf-start-button">DreamInst</button>
-    <button class="mf-start-button" onclick="document.location.href='schedule.html'">Расписание ФМЛ</button>
-    <button class="mf-start-button" onclick="document.location.href='todo.html'">ToDo list</button>
-    <button class="mf-start-button">Квест</button>
-    <button class="mf-start-button">Blog</button>
-    <button class="mf-start-button">About me</button>
-    <!--    <a href="#" class="mf-link">Some Link</a>-->
-</div>
+    <div class="container"></div>
+
+    <script>
+        function getRandomElement(size) {
+            return Math.floor(Math.random() * (size));
+        }
+
+        const links = [
+            {
+                text: 'VK',
+                link: 'https://vk.com/knyazzhev',
+            },
+            {
+                text: 'Telegram',
+                link: 'https://t.me/muhomorfus',
+            },
+            {
+                text: 'Instagram',
+                link: 'https://instagram.com/knyazzhev',
+            },
+            {
+                text: 'CV',
+                link: 'https://hh.ru/resume/4db8a826ff088b28f60039ed1f584a68746c4e',
+            },
+            {
+                text: 'MODERWALD',
+                link: 'https://vk.com/pblchagy_mashbln',
+            },
+        ]
+
+        const link = links[getRandomElement(links.length)]
+
+        const container = document.querySelector('div.container')
+        container.innerHTML = `<a href=${link.link} target="_blank">${link.text}</a>`
+    </script>
 </body>
 </html>
